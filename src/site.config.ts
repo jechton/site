@@ -31,6 +31,8 @@ export const siteConfig: SiteConfig = {
 	url: "http://localhost:4321",
 };
 
+export const socialNames = { ListenBrainz: "jechton", status: "retchohrips" };
+
 // Used to generate links in both the Header & Footer.
 export const menuLinks: { path: string; title: string }[] = [
 	{

@@ -1,0 +1,23 @@
+---
+import { getCollection, render } from "astro:content";
+import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
+import InfoLayout from "@/layouts/Info.astro";
+
+// if you're using an adaptor in SSR mode, getStaticPaths wont work -> https://docs.astro.build/en/guides/routing/#modifying-the-slug-example-for-ssr
+export const getStaticPaths = (async () => {
+	const entries = await getCollection("info");
+	return entries.map((info) => ({
+		params: { id: info.id },
+		props: { info },
+	}));
+}) satisfies GetStaticPaths;
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const { info } = Astro.props;
+const { Content } = await render(info);
+---
+
+<InfoLayout info={info}>
+	<Content />
+</InfoLayout>
