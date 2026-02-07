@@ -1,0 +1,1 @@
+- add top releases or artists from the past week or month to listenbrainz widget
