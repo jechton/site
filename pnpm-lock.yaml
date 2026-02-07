@@ -38,9 +38,6 @@ importers:
       astro-icon:
         specifier: ^1.1.5
         version: 1.1.5
-      astro-robots-txt:
-        specifier: ^1.0.0
-        version: 1.0.0
       astro-webmanifest:
         specifier: ^1.0.0
         version: 1.0.0
@@ -1237,9 +1234,6 @@ packages:
 
   astro-icon@1.1.5:
     resolution: {integrity: sha512-CJYS5nWOw9jz4RpGWmzNQY7D0y2ZZacH7atL2K9DeJXJVaz7/5WrxeyIxO8KASk1jCM96Q4LjRx/F3R+InjJrw==}
-
-  astro-robots-txt@1.0.0:
-    resolution: {integrity: sha512-6JQSLid4gMhoWjOm85UHLkgrw0+hHIjnJVIUqxjU2D6feKlVyYukMNYjH44ZDZBK1P8hNxd33PgWlHzCASvedA==}
 
   astro-webmanifest@1.0.0:
     resolution: {integrity: sha512-ar8SZuFf8k2XuqAYpiaiGmzgpqVufyPx0A9d8OljPup+Sgs+1trG2bpvo7JcM+m4L3figPaYEZOy1rRawCEU0w==}
@@ -4443,11 +4437,6 @@ snapshots:
     transitivePeerDependencies:
       - debug
       - supports-color
-
-  astro-robots-txt@1.0.0:
-    dependencies:
-      valid-filename: 4.0.0
-      zod: 3.25.30
 
   astro-webmanifest@1.0.0:
     dependencies:
