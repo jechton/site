@@ -1,5 +1,6 @@
 services:
   site:
+    container_name: site
     build:
       context: https://github.com/jechton/site.git#main
     ports:

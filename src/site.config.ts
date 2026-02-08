@@ -48,8 +48,8 @@ export const menuLinks: { path: string; title: string }[] = [
 		title: "notes",
 	},
 	{
-		path: "/uses",
-		title: "/uses",
+		path: "/slashes",
+		title: "/slashes",
 	},
 ];
 

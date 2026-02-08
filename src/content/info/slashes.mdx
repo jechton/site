@@ -1,0 +1,34 @@
+---
+title: /slashes
+---
+
+[my slash pages!](https://slashpages.net/#uses)
+
+export const slashes = [
+	// {
+	// 	description: "find out more about me",
+	// 	href: "/about",
+	// 	label: "/about",
+	// },
+	{
+		description: "a public list of bookmarks",
+		href: "/links",
+		label: "/links",
+	},
+	{
+		description: "hardware and software i'm fond of",
+		href: "/uses",
+		label: "/uses",
+	},
+];
+
+<ul class="mt-4 list-none ps-0">
+	{slashes.map(({ description, href, label }) => (
+		<li key={href} class="mb-2 last:mb-0">
+			<a class={`text-link font-mono font-bold`} href={href}>
+				{label}
+			</a>
+			{description && <span class="ms-2 opacity-80">- {description}</span>}
+		</li>
+	))}
+</ul>
